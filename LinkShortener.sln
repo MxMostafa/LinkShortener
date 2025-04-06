@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{8CB5179F-41FE-47F0-A0E1-DE36A08AF5E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8FF27057-5B4B-44D7-94E9-2D397E642127}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{2702E8F2-5642-43B7-9BCE-5E2ED8A673EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{B9EF6DD0-1423-4E89-AACB-F3ED52E1423B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateWays", "ApiGateWays", "{B9A291F2-CF60-4D57-BC80-FE2B151609C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{AC3B3EEA-DA9E-4B17-918A-EBBEFED7F6AE}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2702E8F2-5642-43B7-9BCE-5E2ED8A673EB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B9EF6DD0-1423-4E89-AACB-F3ED52E1423B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B9A291F2-CF60-4D57-BC80-FE2B151609C4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AC3B3EEA-DA9E-4B17-918A-EBBEFED7F6AE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75CEE07A-B4CC-4D67-8131-6599C959E48B}
+	EndGlobalSection
+EndGlobal
