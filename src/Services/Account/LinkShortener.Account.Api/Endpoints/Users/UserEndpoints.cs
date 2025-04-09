@@ -1,6 +1,11 @@
 ﻿
 
+using LinkShortener.Account.Api.Common.HttpHandlers;
+using LinkShortener.Account.Api.Extensions;
+using LinkShortener.Account.Application.Common.Results;
 using LinkShortener.Account.Application.Services.CreateUser.Models;
+using LinkShortener.Account.Application.Services.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LinkShortener.Account.Api.Endpoints.Users;
 
@@ -11,14 +16,15 @@ public class UserEndpoints : ICarterModule
 
     public void AddRoutes(IEndpointRouteBuilder app)
     {
+ 
         var group = app
           .MapGroup(ActionEndpointRoute)
-        .WithTags(ActionEndpointTag);
+          .WithTags(ActionEndpointTag);
 
-        group.MapPost("/users", async (IMediator mediator, [FromBody] CreateUserRequest request, CancellationToken cancellationToken) =>
-        {
-            return await mediator.Send(request, cancellationToken);
-        });
-
+        group.MapHttpPost<CreateUserRequest, Result<CreateUserResponse>>("/users",
+          () => new MapHttpConfiguration
+          {
+              AllowAnonymous = true,
+          });
     }
 }
