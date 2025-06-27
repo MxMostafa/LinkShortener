@@ -1,13 +1,21 @@
 ﻿
 
-
 namespace LinkShortener.Account.Api.Endpoints.Users.Commands;
 
-public class CreateUserRequestHandler : IRequestHandler<CreateUserRequest>
+public class CreateUserRequestHandler : IHttpRequestHandler<CreateUserRequest>
 {
+    private readonly IUserLogic _userLogic;
 
-    public Task Handle(CreateUserRequest request, CancellationToken cancellationToken)
+    public CreateUserRequestHandler(IUserLogic userLogic)
     {
-        throw new NotImplementedException();
+        _userLogic = userLogic;
+    }
+
+    public async Task<Result> Handle(CreateUserRequest request, CancellationToken cancellationToken)
+    {
+        //await _userLogic.CreateUserr
+        return null;
     }
 }
+
+

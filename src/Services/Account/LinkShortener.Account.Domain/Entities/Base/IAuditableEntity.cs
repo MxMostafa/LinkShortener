@@ -15,6 +15,4 @@ public interface IAuditableEntity<T> : IEntity<T>, IBaseEntity
 
     bool IsDeleted { get; set; }
 
-    [NotMapped]
-    bool CheckUser { get; set; }
 }

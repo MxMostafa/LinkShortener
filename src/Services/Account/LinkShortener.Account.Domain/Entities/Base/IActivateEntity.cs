@@ -2,7 +2,7 @@
 
 namespace LinkShortener.Account.Domain.Entities.Base;
 
-public interface IActivateEntity : IAuditableEntity<long>, IEntity<long>, IBaseEntity
+public interface IActivateEntity<T> : IAuditableEntity<T>, IEntity<T>, IBaseEntity
 {
     bool IsActive { get; set; }
 }

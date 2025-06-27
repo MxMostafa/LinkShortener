@@ -3,8 +3,7 @@
 using LinkShortener.Account.Api.Common.HttpHandlers;
 using LinkShortener.Account.Api.Extensions;
 using LinkShortener.Account.Application.Common.Results;
-using LinkShortener.Account.Application.Services.CreateUser.Models;
-using LinkShortener.Account.Application.Services.Models;
+using LinkShortener.Account.Application.Services.Users.CreateUser.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LinkShortener.Account.Api.Endpoints.Users;

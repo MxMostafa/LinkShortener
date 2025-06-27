@@ -3,7 +3,7 @@ using LinkShortener.Account.Domain.Entities.Base.Events;
 
 namespace LinkShortener.Account.Domain.Entities.Base;
 
-public   interface IBaseEntity
+public interface IBaseEntity
 {
     byte[] RowVersion { get; }
 

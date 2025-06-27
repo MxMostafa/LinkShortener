@@ -4,7 +4,7 @@ using LinkShortener.Account.Domain.Enums;
 
 namespace LinkShortener.Account.Domain.Entities;
 
-public class User : ActivateEntity<User>
+public class User : ActivateEntity<User, Guid>
 {
     public string FirstName { get; private set; } = null!;
     public string LastName { get; private set; } = null!;
@@ -18,7 +18,6 @@ public class User : ActivateEntity<User>
     public DateTime? LockoutEndDate { get; private set; }
     public DateTime? LastLoginDate { get; private set; }
     public string RefreshToken { get; private set; } = null!;
-
     public long UserProfileId { get; set; }
     public UserProfile UserProfile { get; private set; } = null!;
 }
