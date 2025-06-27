@@ -22,10 +22,10 @@ public abstract class Entity<T, TIdType> : IEntity<TIdType>, IBaseEntity where T
     [JsonInclude]
     [JsonProperty("Identifier")]
     [MessagePack.Key("Identifier")]
-    public TIdType Id { get; protected set; }
+    public TIdType Id { get; protected set; } = default!;
 
     [Timestamp]
-    public byte[] RowVersion { get; set; }
+    public byte[] RowVersion { get; set; } = default!;
 
     [NotMapped]
     [System.Text.Json.Serialization.JsonIgnore]
@@ -49,13 +49,15 @@ public abstract class Entity<T, TIdType> : IEntity<TIdType>, IBaseEntity where T
 
     public override bool Equals(object? obj)
     {
-        Entity<T, TIdType> entity = obj as Entity<T, TIdType>;
+        if (obj is null) return false;
+
+        Entity<T, TIdType>? entity = obj as Entity<T, TIdType>;
         if ((object)this == entity)
         {
             return true;
         }
 
-        if ((object)entity == null)
+        if (entity is null)
         {
             return false;
         }
@@ -70,7 +72,7 @@ public abstract class Entity<T, TIdType> : IEntity<TIdType>, IBaseEntity where T
             return true;
         }
 
-        if ((object)a == null || (object)b == null)
+        if (a is null || (object)b == null)
         {
             return false;
         }

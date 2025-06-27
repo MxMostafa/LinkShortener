@@ -7,16 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Asp.Versioning.Http"  />
-    <PackageReference Include="Carter"  />
-    <PackageReference Include="FluentValidation.AspNetCore"  />
+    <PackageReference Include="Asp.Versioning.Http" />
+    <PackageReference Include="Carter" />
+    <PackageReference Include="FluentValidation.AspNetCore" />
     <PackageReference Include="MediatR" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi"  />
-    <PackageReference Include="Swashbuckle.AspNetCore"  />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LinkShortener.Account.Application\LinkShortener.Account.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

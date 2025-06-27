@@ -17,12 +17,12 @@ public class Result
 
     protected Result(bool isSuccess, Error? error)
     {
-        if (isSuccess && (object)error != null && error != Error.None)
+        if (isSuccess && error != null && error != Error.None)
         {
             throw new InvalidOperationException();
         }
 
-        if (!isSuccess && ((object)error == null || error == Error.None))
+        if (!isSuccess && (error == null || error == Error.None))
         {
             throw new InvalidOperationException();
         }
@@ -58,7 +58,7 @@ public class Result
 
     public static Result<TValue?> Failure<TValue>(Error error, TValue? value = default(TValue?))
     {
-        return new Result<TValue>(value, isSuccess: false, error);
+        return new Result<TValue?>(value, isSuccess: false, error);
     }
 
     public static Result FirstFailureOrSuccess(params Result[] results)
