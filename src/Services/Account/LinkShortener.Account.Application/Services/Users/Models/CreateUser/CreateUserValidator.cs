@@ -1,4 +1,4 @@
-﻿namespace LinkShortener.Account.Application.Services.Users.CreateUser.Models;
+﻿namespace LinkShortener.Account.Application.Services.Users.Models.CreateUser;
 public class CreateUserValidator: AbstractValidator<CreateUserRequest>
 {
     public CreateUserValidator()

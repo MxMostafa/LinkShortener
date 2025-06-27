@@ -1,3 +1,12 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using LinkShortener.Account.Domain.Entities;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using LinkShortener.Account.Application.Abstractions.Repositories;
+global using LinkShortener.Account.Domain.Entities.Base;
+global using LinkShortener.Account.Persistence.Extensions;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Linq.Expressions;
+global using System.Text;
+global using System.Threading.Tasks;

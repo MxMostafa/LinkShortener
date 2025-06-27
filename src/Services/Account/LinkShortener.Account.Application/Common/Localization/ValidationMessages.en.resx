@@ -123,4 +123,16 @@
   <data name="Password_Format" xml:space="preserve">
     <value>Password Format</value>
   </data>
+  <data name="Invalid_Arguments" xml:space="preserve">
+    <value>Invalid Arguments</value>
+  </data>
+  <data name="ProviderErrors" xml:space="preserve">
+    <value>Provider Errors</value>
+  </data>
+  <data name="ItemIsUsedAndCanNotDeleted" xml:space="preserve">
+    <value>ItemIsUsedAndCanNotDeleted</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>ItemNotFound</value>
+  </data>
 </root>

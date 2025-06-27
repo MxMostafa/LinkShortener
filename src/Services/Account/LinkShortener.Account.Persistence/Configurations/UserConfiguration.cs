@@ -17,14 +17,6 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .UseIdentityColumn()
             .IsRequired();
 
-        builder.Property(_ => _.FirstName)
-            .HasMaxLength(LengthHelper.Name)
-            .IsRequired();
-
-        builder.Property(_ => _.LastName)
-            .HasMaxLength(LengthHelper.Name)
-            .IsRequired();
-
         builder.Property(_ => _.PhoneNumber)
                .HasMaxLength(15)
                .IsRequired();

@@ -123,4 +123,16 @@
   <data name="Password_Format" xml:space="preserve">
     <value>فرمت پسورد</value>
   </data>
+  <data name="Invalid_Arguments" xml:space="preserve">
+    <value>اطلاعات ارائه شده معتبر نیست</value>
+  </data>
+  <data name="ProviderErrors" xml:space="preserve">
+    <value>خطایی ناشناخته اتفاق افتاده است</value>
+  </data>
+  <data name="ItemIsUsedAndCanNotDeleted" xml:space="preserve">
+    <value>به دلیل استفاده از این داده در نقاط دیگر امکان حذف وجود ندارد</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>هیچ موردی با اطلاعات ارائه شده یافت نشد</value>
+  </data>
 </root>

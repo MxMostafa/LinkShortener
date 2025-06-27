@@ -1,5 +1,7 @@
 ﻿
 
+using LinkShortener.Account.Application.Services.Users.Models.CreateUser;
+
 namespace LinkShortener.Account.Api.Endpoints.Users.Commands;
 
 public class CreateUserRequestHandler : IHttpRequestHandler<CreateUserRequest>
@@ -13,8 +15,8 @@ public class CreateUserRequestHandler : IHttpRequestHandler<CreateUserRequest>
 
     public async Task<Result> Handle(CreateUserRequest request, CancellationToken cancellationToken)
     {
-        //await _userLogic.CreateUserr
-        return null;
+       var response= await _userLogic.CreateUserAsync(request,cancellationToken);
+        return response;
     }
 }
 

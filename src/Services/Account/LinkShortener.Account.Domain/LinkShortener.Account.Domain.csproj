@@ -7,17 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mapster"/>
+    <PackageReference Include="Ardalis.GuardClauses" />
+    <PackageReference Include="Mapster" />
     <PackageReference Include="MediatR" />
     <PackageReference Include="MessagePack.Annotations" />
-    <PackageReference Include="Newtonsoft.Json"  />
+    <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Aggregates\User\" />
-    <Folder Include="Users\Entities\" />
-    <Folder Include="Users\Aggregates\" />
-    <Folder Include="Users\ValueObjects\" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,11 @@
 ﻿
 
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
-
+using LinkShortener.Account.Application;
+using LinkShortener.Account.Persistence;
 namespace LinkShortener.Account.Api
 {
     public static class ConfigureService
@@ -23,6 +26,10 @@ namespace LinkShortener.Account.Api
             });
 
             services.AddCarter();
+
+            services.AddApplicationService(configuration);
+            services.AddPersistenceService(configuration);
+            
             return services;
         }
 

@@ -8,7 +8,7 @@ namespace LinkShortener.Account.Api.Extensions;
 public static class HttpHandlerExtension
 {
     public static IEndpointRouteBuilder MapHttpPost<TRequest, TResponse>(this IEndpointRouteBuilder endpoints, string template,Func< MapHttpConfiguration> ? config=null)
-        where TRequest : IRequest
+        where TRequest : IHttpRequest
     {
         var endpoint=endpoints.MapPost(template,
              async(IMediator mediator, [FromBody] TRequest request, CancellationToken cancellationToken)=>

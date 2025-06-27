@@ -61,11 +61,47 @@ namespace LinkShortener.Account.Application.Common.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid Arguments.
+        /// </summary>
+        internal static string Invalid_Arguments {
+            get {
+                return ResourceManager.GetString("Invalid_Arguments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ItemIsUsedAndCanNotDeleted.
+        /// </summary>
+        internal static string ItemIsUsedAndCanNotDeleted {
+            get {
+                return ResourceManager.GetString("ItemIsUsedAndCanNotDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ItemNotFound.
+        /// </summary>
+        internal static string ItemNotFound {
+            get {
+                return ResourceManager.GetString("ItemNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password Format.
         /// </summary>
         internal static string Password_Format {
             get {
                 return ResourceManager.GetString("Password_Format", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider Errors.
+        /// </summary>
+        internal static string ProviderErrors {
+            get {
+                return ResourceManager.GetString("ProviderErrors", resourceCulture);
             }
         }
         
